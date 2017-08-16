@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+}
+
+body > * {
+  width: 100%;
+}
+
+#header {
+  height: 100px;
+  background-color: #FF0000;
+}
+
+#wrapper_main_content {
+  display: flex;
+  flex: 1;
+
+  background-color: #00FF00;
+}
+
+#sidebar {
+
+  width: 300px;
+  height: inherit;
+
+  background-color: #F900F9;
+}
+
+#project_display {
+  flex-grow: 1;
+
+  height: inherit;
+
+  background-color: #FF9900;
+}
+
+#footer {
+  background-color: #0000FF;
+}
