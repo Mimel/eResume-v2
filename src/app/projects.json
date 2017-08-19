@@ -1,0 +1,10 @@
+"projects": [
+  {
+    "title": "ePortfolio, Second Iteration",
+    "desc": "The second rendition of my project web page."
+  },
+  {
+    "title": "Asphodel Sky",
+    "desc": "A 2D rogue-like game that I began when I came to university. Made in Java."
+  }
+]
