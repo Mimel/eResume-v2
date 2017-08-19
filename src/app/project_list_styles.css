@@ -5,5 +5,9 @@
 }
 
 .pl_project_title {
-  
+  cursor:pointer;
+}
+
+.pl_selected_project {
+  background-color: purple;
 }
