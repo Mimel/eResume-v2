@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProjectData } from './project.retrieval.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'project-list',
@@ -10,4 +11,8 @@ import { ProjectData } from './project.retrieval.service';
 export class ProjListComponent {
 
   constructor(private dataService : ProjectData) {}
+
+  ngAfterViewInit() {
+    console.log("TODO");
+  }
 }
