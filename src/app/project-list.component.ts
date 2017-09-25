@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { ProjectData } from './project.retrieval.service';
 import * as $ from 'jquery';
 
@@ -13,6 +13,8 @@ export class ProjListComponent {
   constructor(private dataService : ProjectData) {}
 
   ngAfterViewInit() {
-    console.log("TODO");
+    $( "#pl_complete_list" ).on("click", ".pl_wrapper", function() {
+      $(this).css("color", "red");
+    });
   }
 }
