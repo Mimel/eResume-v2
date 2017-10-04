@@ -1,5 +1,6 @@
 #pl_complete_list {
   position: relative;
+  z-index: 30;
 
   width: inherit;
 
@@ -22,6 +23,8 @@
   padding-left: 1em;
 
   cursor: pointer;
+
+  color: white;
 }
 
 .pl_selected {
@@ -31,14 +34,14 @@
 .pl_divider {
   display: block;
 
-  height: 5px;
+  height: 2px;
 }
 
 #pl_slider {
   position: absolute;
   top: 0;
   z-index: -10;
-  background-color: gray;
+  background-color: rgba(200, 200, 200, 0.3);
 
   width: 100%;
   height: 50px;

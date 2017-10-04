@@ -29,7 +29,8 @@ body > * {
   width: 300px;
   height: inherit;
 
-  background-color: #F900F9;
+  background-color: #030303;
+  background-image: url("../assets/navy_blue.png");
 }
 
 #project_display {
