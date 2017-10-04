@@ -1,6 +1,7 @@
 <ul id="pl_complete_list">
+  <div id="pl_slider"></div>
   <li class="pl_wrapper" *ngFor="let title of dataService.projects">
-    <a class="pl_title" [ngClass]="{'pl_selected': (title.number === dataService.active)}" (click)="dataService.active = title.number">
+    <a class="pl_title" (click)="dataService.active = title.number">
       {{title.name}}
     </a>
     <img class="pl_divider" src="assets/title_divider.png"/>
