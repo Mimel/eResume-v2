@@ -21,7 +21,8 @@ body > * {
   display: flex;
   flex: 1;
 
-  background-color: #00FF00;
+  background-color: #EEEEEE;
+  background-image: url("../assets/footer_lodyas.png");
 }
 
 #sidebar {

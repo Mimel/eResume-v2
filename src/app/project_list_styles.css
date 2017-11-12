@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Questa Sans";
+  src: url("../assets/Questa_Sans.woff");
+}
+
 #pl_complete_list {
   position: relative;
   z-index: 30;
@@ -24,7 +29,13 @@
 
   cursor: pointer;
 
-  color: white;
+  color: #888888;
+  font-family: "Questa Sans", Arial;
+
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .pl_selected {
@@ -43,6 +54,6 @@
   z-index: -10;
   background-color: rgba(200, 200, 200, 0.3);
 
-  width: 100%;
+  width: 120%;
   height: 50px;
 }

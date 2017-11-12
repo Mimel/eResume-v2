@@ -13,7 +13,7 @@ export class ProjListComponent {
   constructor(private dataService : ProjectData) {}
 
   getOffset() {
-    //Accounts for both the height of the title and the separators (In this case, 50 + 5).
+    //Accounts for both the height of the title and the separators (In this case, 50 + 2).
     return this.dataService.active * 52;
   }
 
