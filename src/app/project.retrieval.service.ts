@@ -8,11 +8,11 @@ export class ProjectData {
   active;
 
   constructor(private http: Http) {
-    this.http.get('https://jsonplaceholder.typicode.com/users')
+    this.http.get('http://localhost:4200/assets/projects.json')
                     .map((resp) => resp.json())
                     .subscribe((resp) => {
                       var i = 0;
-                      resp.forEach(element => this.projects.push(new Project(i++, element.name, element.username)))
+                      resp.forEach(element => this.projects.push(new Project(i++, element.name, element.desc, element.story)))
                       this.active = 0;
                     },
                     (error) => {});
@@ -26,11 +26,13 @@ export class ProjectData {
 class Project {
   number;
   name;
-  username;
+  desc;
+  story;
 
-  constructor(number: number, name: string, username: string) {
+  constructor(number: number, name: string, desc: string, story: string) {
     this.number = number;
     this.name = name;
-    this.username = username;
+    this.desc = desc;
+    this.story = story;
   }
 }

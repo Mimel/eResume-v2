@@ -1,3 +1,14 @@
-<div id="display_wrapper">
-  {{dataService.getSelectedProject()?.username}}
-</div>
+<article id="display_wrapper">
+    <h1 id="display_title">
+        {{dataService.getSelectedProject()?.name}}
+    </h1>
+
+    <h2 id="display_desc">
+        {{dataService.getSelectedProject()?.desc}}
+    </h2>
+
+    <main id="display_story">
+        {{dataService.getSelectedProject()?.story}}
+    </main>
+
+</article>

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "eResume (New)",
+        "desc": "An improved version of my previous venture; a showcase of my programming projects through a vehicle that allows viewers to easily evaluate and experience them. Created with HTML, CSS, JS, and Angular.",
+        "story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    },
+    {
+        "name": "eResume (Old)",
+        "desc": "A self-made website used to show off my miscellaneous programming projects. Created with HTML, CSS, and JS.",
+        "story": ""
+    },
+    {
+        "name": "Asphodel Sky",
+        "desc": "asdf",
+        "story": ""
+    },
+    {
+        "name": "Crossword Player",
+        "desc": "asdf",
+        "story": ""
+    }
+]

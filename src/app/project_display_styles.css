@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Questa Sans";
+  src: url("../assets/Questa_Sans.woff");
+}
+
+h1, h2 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
 #display_wrapper {
-  margin: 0 0.1em;
+    font-family: "Questa Sans";
+    margin: 0 1em;
+}
+
+#display_title {
+    font-size: 3em;
+}
+
+#display_desc {
+    font-size: 1.5em;
+}
+
+#display_story {
+    font-size: 1em;
 }
