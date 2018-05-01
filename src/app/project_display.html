@@ -3,12 +3,51 @@
         {{dataService.getSelectedProject()?.name}}
     </h1>
 
-    <h2 id="display_desc">
-        {{dataService.getSelectedProject()?.desc}}
-    </h2>
+    <div id="display_allinfo">
+        <div id="display_text">
+            <h2 id="display_desc">
+                {{dataService.getSelectedProject()?.desc}}
+            </h2>
 
-    <main id="display_story">
-        {{dataService.getSelectedProject()?.story}}
-    </main>
+            <div id= "display_inside_section_divider" class="display_section_divider">
+            </div>
+
+            <div id="display_clickable_inside" class="display_clickable">
+                <ul id="display_links">
+                    <a [href]="link.destination"  *ngFor="let link of dataService.getSelectedProject()?.links">
+                        <li class="display_outref">
+                            {{link.text}}
+                        </li>
+                    </a>
+                </ul>
+                <figure id="display_gallery">
+                    <div class="display_thumbnail" *ngFor="let thumb of dataService.getSelectedProject()?.gallery">
+
+                    </div>
+                </figure>
+            </div>
+
+            <div class="display_section_divider">
+            </div>
+
+            <main id="display_story">
+                {{dataService.getSelectedProject()?.story}}
+            </main>
+        </div>
+        <div id="display_clickable_sidebar" class="display_clickable">
+            <ul id="display_links">
+                <a [href]="link.destination"  *ngFor="let link of dataService.getSelectedProject()?.links">
+                    <li class="display_outref">
+                        {{link.text}}
+                    </li>
+                </a>
+            </ul>
+            <figure id="display_gallery">
+                <div class="display_thumbnail" *ngFor="let thumb of dataService.getSelectedProject()?.gallery">
+
+                </div>
+            </figure>
+        </div>
+    </div>
 
 </article>

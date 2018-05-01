@@ -12,7 +12,7 @@ export class ProjectData {
                     .map((resp) => resp.json())
                     .subscribe((resp) => {
                       var i = 0;
-                      resp.forEach(element => this.projects.push(new Project(i++, element.name, element.desc, element.story)))
+                      resp.forEach(element => this.projects.push(new Project(i++, element.name, element.desc, element.story, element.links, element.gallery)))
                       this.active = 0;
                     },
                     (error) => {});
@@ -28,11 +28,20 @@ class Project {
   name;
   desc;
   story;
+  links;
+  gallery;
 
-  constructor(number: number, name: string, desc: string, story: string) {
+  constructor(number: number, name: string, desc: string, story: string, links: Link[], gallery: string[]) {
     this.number = number;
     this.name = name;
     this.desc = desc;
     this.story = story;
+    this.links = links;
+    this.gallery = gallery;
   }
+}
+
+interface Link {
+    text: string;
+    destination: string;
 }

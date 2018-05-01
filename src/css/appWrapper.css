@@ -14,7 +14,20 @@ body > * {
 
 #header {
   height: 100px;
-  background-color: #FF0000;
+  background-color: #333333;
+}
+
+#nameplate {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: auto;
+}
+
+#treeheader {
+  position: absolute;
+  right: 0px;
+  width: auto;
 }
 
 #wrapper_main_content {
@@ -26,7 +39,6 @@ body > * {
 }
 
 #sidebar {
-
   width: 300px;
   height: inherit;
 
@@ -40,8 +52,4 @@ body > * {
   height: inherit;
 
   background-color: #FF9900;
-}
-
-#footer {
-  background-color: #0000FF;
 }
