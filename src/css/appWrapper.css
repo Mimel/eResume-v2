@@ -19,9 +19,18 @@ body > * {
 
 #nameplate {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  width: auto;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: right;
+}
+
+#name {
+    display: none;
+}
+
+#name_large {
+    display: inline-block;
 }
 
 #treeheader {
@@ -52,4 +61,18 @@ body > * {
   height: inherit;
 
   background-color: #FF9900;
+}
+
+@media (max-width: 1200px) {
+    #nameplate {
+        text-align: center;
+    }
+
+    #name {
+        display: inline-block;
+    }
+
+    #name_large {
+        display:  none;
+    }
 }
