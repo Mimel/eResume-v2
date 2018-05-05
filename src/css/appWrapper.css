@@ -76,3 +76,8 @@ body > * {
         display:  none;
     }
 }
+@media (max-width: 950px) {
+    #sidebar {
+        display: none;
+    }
+}
