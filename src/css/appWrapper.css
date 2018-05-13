@@ -70,6 +70,8 @@ body > * {
 
     #name {
         display: inline-block;
+        width: 100%;
+        max-width: 400px;
     }
 
     #name_large {

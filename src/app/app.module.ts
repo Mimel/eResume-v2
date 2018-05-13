@@ -6,12 +6,15 @@ import { ProjListComponent } from './project-list.component';
 import { ProjDisplayComponent } from './project-display.component';
 import { ProjectData } from './project.retrieval.service';
 
+import { AngularFittextModule } from 'angular-fittext';
+
 @NgModule({
   declarations: [
     ProjListComponent,
     ProjDisplayComponent
   ],
   imports: [
+    AngularFittextModule,
     BrowserModule,
     HttpModule
   ],

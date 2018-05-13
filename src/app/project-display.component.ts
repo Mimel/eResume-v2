@@ -38,9 +38,8 @@ export class ProjDisplayComponent {
 
           // define options (if needed)
           var options = {
-              // optionName: 'option value'
-              // for example:
-              index: 0 // start at first slide
+              bgOpacity: 0.8,
+              index: 0
           };
 
           // Initializes and opens PhotoSwipe

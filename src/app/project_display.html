@@ -13,14 +13,14 @@
             </div>
 
             <div id="display_clickable_inside" class="display_clickable">
-                <ul id="display_links">
+                <ul class="display_links">
                     <a [href]="link.destination"  *ngFor="let link of dataService.getSelectedProject()?.links">
                         <li class="display_outref">
                             {{link.text}}
                         </li>
                     </a>
                 </ul>
-                <figure id="display_gallery">
+                <figure class="display_gallery">
                     <div class="display_thumbnail" *ngFor="let thumb of dataService.getSelectedProject()?.gallery">
 
                     </div>
@@ -35,14 +35,14 @@
             </main>
         </div>
         <div id="display_clickable_sidebar" class="display_clickable">
-            <ul id="display_links">
+            <ul class="display_links">
                 <a [href]="link.destination"  *ngFor="let link of dataService.getSelectedProject()?.links">
                     <li class="display_outref">
                         {{link.text}}
                     </li>
                 </a>
             </ul>
-            <figure id="display_gallery">
+            <figure class="display_gallery">
                 <div class="display_thumbnail" *ngFor="let thumb of dataService.getSelectedProject()?.gallery">
 
                 </div>
