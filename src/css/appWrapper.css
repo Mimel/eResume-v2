@@ -78,8 +78,13 @@ body > * {
         display:  none;
     }
 }
-@media (max-width: 950px) {
+
+@media (max-width: 900px) {
+    #wrapper_main_content {
+      flex-direction: column;
+    }
+
     #sidebar {
-        display: none;
+      width: 100%;
     }
 }

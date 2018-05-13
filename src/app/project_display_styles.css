@@ -188,7 +188,7 @@ ul {
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
     #display_title {
         font-size: 9vw;
         margin: 0 auto;
