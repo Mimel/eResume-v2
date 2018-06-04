@@ -122,7 +122,6 @@ ul {
 
 .display_thumbnail {
     height: 100px;
-    padding-top: 50%;
     width: 50%;
 
     box-sizing: border-box;
@@ -130,8 +129,6 @@ ul {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0.3);
-
-    background-color: red;
 }
 
 #display_footer {

@@ -1,7 +1,7 @@
 (function() {
     var canvas = document.getElementById("header");
     var ctxt = canvas.getContext("2d");
-    var lights = new Array(20);
+    var lights = new Array(50);
     var canvasWidth = window.innerWidth;
 
     class strobe {
@@ -81,7 +81,7 @@
     }
 
     for(var i = 0; i < lights.length; i++) {
-        lights[i] = new strobe(Math.random() * canvasWidth, Math.random() * 100, 900, 900, Math.random() * 20 + 190, 60, Math.random() * 20 + 40);
+        lights[i] = new strobe(Math.random() * canvasWidth, Math.random() * 100, 900, 900, Math.random() * 20 + 140, 90, Math.random() * 20 + 40);
     }
 
     resizeCanvas();

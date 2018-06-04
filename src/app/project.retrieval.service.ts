@@ -9,6 +9,7 @@ export class ProjectData {
 
   constructor(private http: Http) {
     this.http.get('http://localhost:4200/assets/projects.json')
+    //this.http.get('http://mattimel.com/newsite/assets/projects.json')
                     .map((resp) => resp.json())
                     .subscribe((resp) => {
                       var i = 0;
@@ -31,7 +32,7 @@ class Project {
   links;
   gallery;
 
-  constructor(number: number, name: string, desc: string, story: string, links: Link[], gallery: string[]) {
+  constructor(number: number, name: string, desc: string, story: string, links: Link[], gallery: string[][]) {
     this.number = number;
     this.name = name;
     this.desc = desc;

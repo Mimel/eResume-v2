@@ -2,18 +2,18 @@
     {
         "name": "eResume (New)",
         "desc": "An improved version of my previous venture; a showcase of my programming projects through a vehicle that allows viewers to easily evaluate and experience them. Created with HTML, CSS, JS, and Angular.",
-        "story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "story":"I was initially very proud when I made my first e-Portfolio. I thought of it as a perfect summary of my programming capabilities that showcases the sprawl of my knowledge, from front-end web design to C. There, people can browse my projects and get a first-hand look at not only my programming style, but my dedication to the field. Over time, and through many peer reviews, I began to see flaws in this vehicle.<br /><br /> The single, most damning issue with the website was that each expanded project view had a fixed height of 300 pixels. This put a severe limiter on what could be displayed. Links, for example, had to be restricted to less than four – else, the display would not function as intended. The project description could only be a few sentences. The most important part of a programming project, in my opinion, is in the process to get to completion. These would involve listing hardships and solutions, as well as iterating through failed and successful design decisions in models and patterns. All of this context, which is ultimately necessary in explaining the breadth of the project, could not be displayed legibly with a height of 300 pixels.<br /><br /> In order to solve this issue, my e-Portfolio needed a complete revamp in its project display paradigm.<br /><br /> First and foremost, I needed a way to store my project data as raw text, instead of a hard-coded solution. By storing this data in its own separate file, it can be easily adjusted, and new projects can be easily appended. On my previous website",
         "links": [
                     {
                         "text": "This is link 1.",
                         "destination": "http://clickhole.com"
-                    },
-                    {
-                        "text": "Link 2.",
-                        "destination": "http://rexwordpuzzle.blogspot.com"
                     }
                  ],
-        "gallery": ["test", "test2", "test3", "test4", "test5", "test6"]
+        "gallery": [
+                    ["eResumeV2/full/image_1.jpg",
+                     "eResumeV2/full/image_2.jpg"],
+                    ["eResumeV2/small/image_1.jpg",
+                     "eResumeV2/small/image_2.jpg"]]
     },
     {
         "name": "eResume (Old)",

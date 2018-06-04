@@ -43,8 +43,12 @@ export class ProjDisplayComponent {
           };
 
           // Initializes and opens PhotoSwipe
-          var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+          var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
           gallery.init();
     }
+  }
+
+  prependPath(gallery_file: string): string {
+      return ("assets/images/project_images/" + gallery_file);
   }
 }
