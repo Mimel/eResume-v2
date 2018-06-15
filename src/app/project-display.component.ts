@@ -15,31 +15,68 @@ export class ProjDisplayComponent {
 
   ngAfterViewInit() {
 
-      $("#display_wrapper").on("click", ".display_thumbnail", {env: this}, showGallery);
+      $("#display_wrapper").on("click", ".display_thumbnail", {env: this}, buildGallery);
+      $("#display_wrapper").on("mouseenter", ".display_outref", {env: this}, hoverLink);
 
-      function showGallery(event) {
+      function hoverLink(event) {
+          console.log("Yep!");
+      }
+
+      function buildGallery(event) {
+          var environment = event.data.env;
+          var items = new Array();
+
+          var clickedNode = event.target.parentNode;
+          var gallery = clickedNode.parentNode;
+          var nodes = gallery.childNodes;
+          var numNodes = nodes.length;
+          var index = 0;
+
+          var currentImage;
+          var numElements = 0;
+          var dimensions;
+
+          for(var i = 0; i < numNodes; i++) {
+              if(nodes[i].nodeType === Node.ELEMENT_NODE) {
+                  numElements++;
+              }
+          }
+
+          for(var i = 0; i < numElements; i++) {
+              currentImage = environment.dataService.getSelectedProject().gallery[i];
+              dimensions = currentImage[2].split('x');
+
+              items.push({
+                  src: environment.prependPath(currentImage[0]),
+                  w: parseInt(dimensions[0]),
+                  h: parseInt(dimensions[1])
+              });
+          }
+
+          var currentElement = 0;
+          for(var i = 0; i < numNodes; i++) {
+              if(nodes[i].nodeType === Node.ELEMENT_NODE) {
+                  if(nodes[i] === clickedNode) {
+                      index = currentElement;
+                      break;
+                  } else {
+                      currentElement++;
+                  }
+              }
+          }
+
+          showGallery(index, items);
+      }
+
+      function showGallery(index, items) {
           var pswpElement = document.querySelectorAll('.pswp')[0];
 
-          console.log("Hello!");
-
-          // build items array
-          var items = [
-              {
-                  src: 'https://placekitten.com/600/400',
-                  w: 600,
-                  h: 400
-              },
-              {
-                  src: 'https://placekitten.com/1200/900',
-                  w: 1200,
-                  h: 900
-              }
-          ];
+          console.log(index);
 
           // define options (if needed)
           var options = {
               bgOpacity: 0.8,
-              index: 0
+              index: index
           };
 
           // Initializes and opens PhotoSwipe

@@ -21,8 +21,8 @@
                     </a>
                 </ul>
                 <figure class="display_gallery">
-                    <div class="display_thumbnail" *ngFor="let thumb of dataService.getSelectedProject()?.gallery">
-
+                    <div class="display_thumbnail" *ngFor="let imginfo of dataService.getSelectedProject()?.gallery">
+                        <img [src]="prependPath(imginfo[1])" />
                     </div>
                 </figure>
             </div>
@@ -42,8 +42,8 @@
                 </a>
             </ul>
             <figure class="display_gallery">
-                <div class="display_thumbnail" *ngFor="let thumb of dataService.getSelectedProject()?.gallery[1]">
-                    <img [src]="prependPath(thumb)" />
+                <div class="display_thumbnail" *ngFor="let imginfo of dataService.getSelectedProject()?.gallery">
+                    <img [src]="prependPath(imginfo[1])" />
                 </div>
             </figure>
         </div>
@@ -51,10 +51,10 @@
     </div>
 
     <footer id="display_footer">
-        <img src="../assets/github_icon.svg" />
+        <img src="assets/github_icon.svg" />
         <div id="display_footer_spacer">
 
         </div>
-        <img src="../assets/email_icon.svg" />
+        <img src="assets/email_icon.svg" />
     </footer>
 </article>

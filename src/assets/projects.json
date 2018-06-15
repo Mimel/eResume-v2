@@ -11,23 +11,28 @@
                  ],
         "gallery": [
                     ["eResumeV2/full/image_1.jpg",
-                     "eResumeV2/full/image_2.jpg"],
-                    ["eResumeV2/small/image_1.jpg",
-                     "eResumeV2/small/image_2.jpg"]]
+                     "eResumeV2/small/image_1.jpg",
+                     "1200x800"],
+                    ["eResumeV2/full/image_2.jpg",
+                     "eResumeV2/small/image_2.jpg",
+                     "600x600"]]
     },
     {
         "name": "eResume (Old)",
         "desc": "A self-made website used to show off my miscellaneous programming projects. Created with HTML, CSS, and JS.",
-        "story": ""
+        "story": "",
+        "gallery": [[],[]]
     },
     {
         "name": "Asphodel Sky",
         "desc": "asdf",
-        "story": ""
+        "story": "",
+        "gallery": [[],[]]
     },
     {
         "name": "Crossword Player",
         "desc": "asdf",
-        "story": ""
+        "story": "",
+        "gallery": [[],[]]
     }
 ]

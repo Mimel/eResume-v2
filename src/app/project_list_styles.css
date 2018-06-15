@@ -25,7 +25,9 @@
   width: 100%;
   height: 50px;
 
-  padding-left: 1em;
+  padding-left: 10px;
+
+  box-sizing: border-box;
 
   cursor: pointer;
 
@@ -44,6 +46,7 @@
 
 .pl_divider {
   display: block;
+  width: 100%;
 
   height: 2px;
 }
