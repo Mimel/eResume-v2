@@ -81,7 +81,7 @@
     }
 
     for(var i = 0; i < lights.length; i++) {
-        lights[i] = new strobe(Math.random() * canvasWidth, Math.random() * 100, 900, 900, Math.random() * 20 + 140, 90, Math.random() * 20 + 40);
+        lights[i] = new strobe(Math.random() * canvasWidth, Math.random() * 100, 900, 900, Math.random() * 20 + 10, 90, Math.random() * 20 + 40);
     }
 
     resizeCanvas();

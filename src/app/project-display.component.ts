@@ -73,13 +73,11 @@ export class ProjDisplayComponent {
 
           console.log(index);
 
-          // define options (if needed)
           var options = {
               bgOpacity: 0.8,
               index: index
           };
 
-          // Initializes and opens PhotoSwipe
           var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
           gallery.init();
     }
