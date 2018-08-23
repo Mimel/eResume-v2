@@ -14,7 +14,7 @@
 
             <div id="display_clickable_inside" class="display_clickable">
                 <ul class="display_links">
-                    <a [href]="link.destination"  *ngFor="let link of dataService.getSelectedProject()?.links">
+                    <a [href]="link.destination" *ngFor="let link of dataService.getSelectedProject()?.links">
                         <li class="display_outref">
                             {{link.text}}
                         </li>
@@ -37,7 +37,7 @@
             <ul class="display_links">
                 <a [href]="link.destination"  *ngFor="let link of dataService.getSelectedProject()?.links">
                     <li class="display_outref">
-                        {{link.text}}
+                        {{link.text}}<br  />{{link.subtext}}
                     </li>
                 </a>
             </ul>
@@ -51,10 +51,10 @@
     </div>
 
     <footer id="display_footer">
-        <img src="assets/github_icon.svg" />
+        <a href="https://github.com/Mimel" target="_blank"><img src="assets/github_icon.svg" /></a>
         <div id="display_footer_spacer">
 
         </div>
-        <img src="assets/email_icon.svg" />
+        <a href="mailto:imel.matt.r@gmail.com" target="_blank"><img src="assets/email_icon.svg" /></a>
     </footer>
 </article>

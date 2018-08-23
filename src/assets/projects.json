@@ -2,37 +2,49 @@
     {
         "name": "eResume (New)",
         "desc": "An improved version of my previous venture; a showcase of my programming projects through a vehicle that allows viewers to easily evaluate and experience them. Created with HTML, CSS, JS, and Angular.",
-        "story":"I was initially very proud when I made my first e-Portfolio. I thought of it as a perfect summary of my programming capabilities that showcases the sprawl of my knowledge, from front-end web design to C. There, people can browse my projects and get a first-hand look at not only my programming style, but my dedication to the field. Over time, and through many peer reviews, I began to see flaws in this vehicle.<br /><br /> The single, most damning issue with the website was that each expanded project view had a fixed height of 300 pixels. This put a severe limiter on what could be displayed. Links, for example, had to be restricted to less than four – else, the display would not function as intended. The project description could only be a few sentences. The most important part of a programming project, in my opinion, is in the process to get to completion. These would involve listing hardships and solutions, as well as iterating through failed and successful design decisions in models and patterns. All of this context, which is ultimately necessary in explaining the breadth of the project, could not be displayed legibly with a height of 300 pixels.<br /><br /> In order to solve this issue, my e-Portfolio needed a complete revamp in its project display paradigm.<br /><br /> First and foremost, I needed a way to store my project data as raw text, instead of a hard-coded solution. By storing this data in its own separate file, it can be easily adjusted, and new projects can be easily appended. On my previous website",
+        "story":"I was initially very proud when I made my first e-Portfolio. I thought of it as a perfect summary of my programming capabilities that showcases the sprawl of my knowledge, from front-end web design to C. There, people can browse my projects and get a first-hand look at not only my programming style, but my dedication to the field. Over time, and through many peer reviews, I began to see flaws in this vehicle.<br /><br /> The single, most damning issue with the website was that each expanded project view had a fixed height of 300 pixels. This put a severe limit on what could be displayed. Links, for example, had to be restricted to less than four – else, the display would not function as intended. The project description could only be a few sentences. The most important part of a programming project, in my opinion, is in the process to get to completion. These would involve listing hardships and solutions, as well as iterating through failed and successful design decisions in models and patterns. All of this context, which is ultimately necessary in explaining the breadth of the project, could not be displayed legibly with a height of 300 pixels.<br /><br /> In order to solve this issue, my e-Portfolio needed a complete revamp in its project display paradigm.<br /><br /> First and foremost, I needed a way to store my project data as raw text, instead of a hard-coded solution. By storing this data in its own separate file, it can be easily adjusted, and new projects can be easily appended. On my previous website, this information was stored inside a JavaScript file as a set of parameters to a function. In this rendition, I opted to use Angular and JSON as a scheme to store and show projects. Though this new website could’ve been built on regular JS while still using JSON, redoing my portfolio would provide me a perfect opportunity to learn a new platform – Angular.<br /><br /> If you have seen my old website, then you may have seen the biggest change – opting for a sidebar as my navigation medium rather than the old “expanding tabs” style. This change was put into place to eliminate our main problem with the old website – a fixed height for project details. With this new method, each project can contain much more information, such as the description you are reading.<br /><br /> There is a problem that exists with this method, in that sidebars, of course, do not nicely fit onto mobile screens. On low-width screens, like phones or vertically-oriented tablets, I would love to implement a navigation system where one can swipe left or right to segue between projects. However, lacking the technical know-how for implementing that at the current moment, I instead opted to put all the projects in list form just below the header. This will work for a small amount of projects, but as the list inevitably grows, I will have to find a solution like my ideal one that doesn't require the reader to scroll through the project list before reading the content of each project.<br /><br /> There were many other, more minor changes.<br /><br /> For the gallery, I initially wanted to design my own system using pure JS. There was a choice to be made between using a premade plugin, and creating my own. On one hand, making my own could really show my programming skill off – on the other, using a program that someone already made could show resourcefulness, as well as an aversion toward making things that had already been done. For my new website, I used PhotoSwipe to use as a gallery implementation.<br /><br /> The header and footer have also had minor edits done to them.<br /><br /> The header on my old website was too big in my opinion, and was a bit too showy. In my new website, the header still uses Canvas to render an animation, but this one is low-height and subtly-animated, not distracting the reader and providing a nice colory contrast to the largely-monochrome website. It would ideally work in much the same way a tie enhances a suit.<br /><br /> The footer was adjusted in very much the same way. Rather than having redundant (e.g. my name) or unnecessary details (e.g. my phone number), I instead opted for a very low-height footer that consisted of just two icons: a link to my GitHub account, and a link to contact me via email.<br /><br /> In short, the main goal of this restructuring was to flesh out project details, emphasize important features such as those project details, and understate unimportant features, such as the header and footer. In this way, I hope to provide a cleaner and more enjoyable browsing experience to you, the reader.<br /><br />",
         "links": [
                     {
-                        "text": "This is link 1.",
-                        "destination": "http://clickhole.com"
+                        "text": "Live Version",
+                        "subtext": "(You're looking at it right now)",
+                        "destination": "http://mattimel.com"
+                    },
+                    {
+                        "text": "GitHub Page",
+                        "subtext": "",
+                        "destination": "https://github.com/Mimel/eResume-v2"
                     }
                  ],
         "gallery": [
-                    ["eResumeV2/full/image_1.jpg",
-                     "eResumeV2/small/image_1.jpg",
-                     "1200x800"],
-                    ["eResumeV2/full/image_2.jpg",
-                     "eResumeV2/small/image_2.jpg",
-                     "600x600"]]
+                    ["eResumeV2/full/desktop_page.JPG",
+                     "eResumeV2/small/desktop_page.JPG",
+                     "1920x1080"],
+                    ["eResumeV2/full/mobile_page.jpg",
+                     "eResumeV2/small/mobile_page.jpg",
+                     "1080x2220"]]
     },
     {
         "name": "eResume (Old)",
         "desc": "A self-made website used to show off my miscellaneous programming projects. Created with HTML, CSS, and JS.",
-        "story": "",
-        "gallery": [[],[]]
-    },
-    {
-        "name": "Asphodel Sky",
-        "desc": "asdf",
-        "story": "",
-        "gallery": [[],[]]
-    },
-    {
-        "name": "Crossword Player",
-        "desc": "asdf",
-        "story": "",
-        "gallery": [[],[]]
+        "story": "Please note that this is a retrospective from a couple years ago when I initially made my eResume. Some details may be forgotten across those years, though many of the core ideas I had when creating the website remain firm in memory.<br /><br />I learned web programming as a hobby in high school. In college, I wanted to use my skills to enhance my programming repertoire. And in my search for a way to exercise my knowledge over the subject, I found a topic that could both showcase my web development knowledge, as well as showcase my other programming feats.<br /><br />An eResume.<br /><br />When planning the design of the website, I wanted the page to be scalable: as the eResume will be a collection of my projects, it is only natural that I would display more over time, and I needed my website to accompany the growth.<br /><br />In my Javascript, this meant that a project should be represented by a set of text strings that would later be interpreted and formatted to make an HTML block that would be injected into the page. A project detail could then be typed up and appended to the project list in minutes, without the need to copy-paste HTML.<br /><br />In my HTML/CSS, I had decided that projects would be represented as a list of project names that would expand on click to reveal more information about the project. In this way, I could potentially list hundreds of projects, while the view remains relatively unhampered.<br /><br />In addition, I wanted my site to be responsive; to be effective when viewed from a mobile device, as well as desktops. This 'list of project names' played well to this end, as they were not very width-dependent - the contents of each project, however, neede rearranging in order to be effectively portrayed on mobile environments.<br /><br />I was very satisfied with my design after I completed the website. Over time, however, I began to find faults in it (all of them are explained under the 'eResume (New)' project), and after about a year, I began revising my ePortfolio.<br /><br />",
+        "links": [
+                    {
+                        "text": "Live Version",
+                        "subtext": "",
+                        "destination": "http://mattimel.com/oldsite"
+                    },
+                    {
+                        "text": "GitHub Page",
+                        "subtext": "",
+                        "destination": "https://github.com/Mimel/Matt-Imel-eResume"
+                    }
+                 ],
+        "gallery": [
+                    ["eResumeV1/full/old_eresume_desktop.JPG",
+                     "eResumeV1/small/old_eresume_desktop.JPG",
+                     "1921x983"],
+                    ["eResumeV1/full/old_eresume_mobile.jpg",
+                     "eResumeV1/small/old_eresume_mobile.jpg",
+                     "1080x2220"]]
     }
 ]

@@ -44,5 +44,6 @@ class Project {
 
 interface Link {
     text: string;
+    subtext: string;
     destination: string;
 }

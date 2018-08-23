@@ -70,6 +70,7 @@ ul {
     margin-bottom: 2em;
 
     width: 100%;
+    min-width: 300px;
     max-width: 300px;
 
     display: flex;
@@ -138,7 +139,7 @@ ul {
 
 #display_footer * {
     height: 40px;
-    opacity: 0.1;
+    opacity: 0.5;
 }
 
 #display_footer_spacer {
@@ -196,5 +197,9 @@ ul {
 
     #display_story {
         font-size: 4vw;
+    }
+
+    .display_clickable {
+        min-width: inherit;
     }
 }
